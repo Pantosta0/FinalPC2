@@ -19,14 +19,14 @@ I **strongly** suggest you to use the [**JSON Viewer**](https://chrome.google.co
 ##  Testing the web service
 In case you don't have [**JSON Viewer**](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=es) here are the curl commands to test it:
 
-`- curl http://localhost:5000/checkConnection` Checks the connection with the database. It will return ok if its connected or nok if it can't connect to the database.
+-`curl http://localhost:5000/checkConnection` Checks the connection with the database. It will return ok if its connected or nok if it can't connect to the database.
 
-`- curl http://localhost:5000/hash/:id` Creates a new hash based in the `:id` introduced.
+-`curl http://localhost:5000/hash/:id` Creates a new hash based in the `:id` introduced.
 
-`- curl http://localhost:5000/validate/:id?hash=:hash` Validates if the `:hash` introduced is assigned to the `:id` introduced.
+-`curl http://localhost:5000/validate/:id?hash=:hash` Validates if the `:hash` introduced is assigned to the `:id` introduced.
 
-`- curl http://localhost:5000/stable` Shows the S table.
+-`curl http://localhost:5000/stable` Shows the S table.
 
-`- curl http://localhost:5000/atable` Shows the A table.
+-`curl http://localhost:5000/atable` Shows the A table.
 
-`- curl http://localhost:5000/delete` Deletes all the content in both tables.
+-`curl http://localhost:5000/delete` Deletes all the content in both tables.
